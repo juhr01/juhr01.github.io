@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styling.css" rel="stylesheet">
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <title>Lomake</title>
+</head>
+
+<body>
+    <section class="container">
+        <a id="takaisin" href="../projektit/projektit.html">&#8592;Takaisin</a>
+        <div id="lomakecontainer">
+        <form id="lomake" onsubmit="return validateForm()">
+            <h1>Rekisteröitymislomake</h1>
+            <br>
+            <h4>Siirry kentästä toiseen tab-näppäimellä</h2>
+            <br>
+            <ul>
+                <li>Käyttäjä ID:n minimipituus 6 merkkiä</li>
+                <li>Postinumeron pituus 5 merkkä</li>
+                <li>Sähköpostiosoitteen tulee olla sähköpostiosoitteen muotoinen</li>
+                <li><span style="color:red">*</span> = pakollinen kenttä</li>
+            </ul>
+            <table>
+                <tr>
+                <td align="right"><span style="color:red">*</span>Käyttäjä ID:</td>
+                <td align="left"><input type="text" id="kayttajaId" name="kayttajaId" ></td>
+                </tr>
+                <tr>
+                    <td align="right"><span style="color:red">*</span>Salasana:</td>
+                    <td align="left"><input type="password" id="salasana" name="salasana" ></td>
+                </tr>
+                <tr>
+                    <td align="right"><span style="color:red">*</span>Nimi:</td>
+                    <td align="left"><input type="text" id="nimi" name="nimi" ></td>
+                </tr>
+                <tr>
+                    <td align="right"><span style="color:red">*</span>Osoite:</td>
+                    <td align="left"><input type="text" id="osoite" name="osoite" ></td>
+                </tr>
+                <tr>
+                   <td align="right"><span style="color:red">*</span>Maa:</td>
+                   <td align="left"><select name="select" id="select">
+                       <option value="eivalittu" id="eivalittu">Valitse maa...</option>
+                       <option value="suomi" id="suomimaa">Suomi</option>
+                       <option value="muu" id="muumaa">Muu</option>
+                   </select>
+                   </td>
+                </tr>
+                <tr>
+                    <td align="right"><span style="color:red">*</span>Postinumero:</td>
+                    <td align="left"><input type="text" id="postiNro" name="postiNro" ></td>
+                </tr>
+                <tr>
+                    <td align="right"><span style="color:red">*</span>Sähköposti:</td>
+                    <td align="left"><input type="text" id="sPosti" name="sPosti" ></td>
+                </tr>  
+                <tr>
+                    <td align="right"><span style="color:red">*</span>Sukupuoli:</td>
+                    <td align="left">
+                        <div id="sukupuolet">
+                            <label for="mies">Mies <input type="radio" id="mies" name="sukupuoli"></label>
+                            <label for="nainen">Nainen <input type="radio" id="nainen" name="sukupuoli"></label>
+                            <label for="muu"> Muu <input type="radio" id="muu" name="sukupuoli"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><span style="color:red">*</span>Kieli:</td>
+                    <td align="left">
+                        <div id="kielet">
+                            <label for="suomi">Suomi <input type="radio" id="suomikieli" name="kieli"></label>
+                            <label for="muuKuinSuomi">Muu kuin suomi <input type="radio" id="muuKuinSuomi" name="kieli"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Lisätietoja:</td>
+                    <td align="left"><textarea id="lisatiedot" name="lisatiedot" rows="6" cols="22"></textarea></td>
+                </tr>
+            </table>
+            <div id="lahetacontainer">
+                <input class="btn" type="submit" value="Lähetä" id="laheta">
+            </div>
+        </div>
+        </form>
+    </section>
+    <footer>
+        <p class="footertext">© Juho Riipinen TiVi21A</p>
+      </footer>
+
+    <script src="validaattori.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+
+</body>
+
+</html>

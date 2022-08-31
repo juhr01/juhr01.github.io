@@ -1,0 +1,224 @@
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 1.6;
+    background-image: url('tausta.png');
+    background-size: cover;
+    max-width: 100%;
+	height: 100%;
+    font-size:50%;
+}
+
+p {
+  text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3em;
+    background-color: white;
+    padding: 30px 0px 90px 0px;
+    max-width: 900px !important; 
+}
+
+#pelialue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#valikko {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#peli {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tilasto {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+#pelivuorolaatikko {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#napit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#nopat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#tilanne {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+
+footer {
+    position:fixed;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+    margin-top:20px;
+    background-color: #1a1a1a;
+  
+  }
+
+  .footertext {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+  }
+
+  #takaisin {
+    display: block;
+    padding: 10px 20px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  #takaisin:hover {
+    background: grey;
+    color:black;
+    text-decoration: none;
+  }
+
+  
+  @media screen and (max-width :770px) {
+    #peli {
+        flex-direction: column;
+    }
+  }
+
+ 
+
+  .nappi {
+    display: block;
+    padding: 10px 20px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    text-decoration: none;
+  }
+
+  .nappi:hover {
+    background: grey;
+    color:black;
+    text-decoration: none;
+  }
+
+  .pelaajanimiinput {
+    border-radius: 5px;
+    border-width: 0.1em;
+  }
+
+  .pelaajanimilabel {
+    margin-right: 0.5em;
+  }
+
+  .noppavalinta {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #yksiNoppa2p {
+    margin-right: 1em;
+  }
+
+  #yksiNoppa3p {
+    margin-right: 1em;
+  }
+
+  #kaksiPelaajaaSetup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  #kolmePelaajaaSetup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pelaajat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .pelaaja1i {
+    display:flex;
+    flex-direction: row;
+
+  }
+
+  .pelaaja2i {
+    display:flex;
+    flex-direction: row;
+    
+  }
+
+  .pelaaja3i {
+    display:flex;
+    flex-direction: row;
+    
+  }
+
+  #heita {
+    margin-right: 1em;
+  }
+
+  #peliloppu {
+    margin-top: 3em;
+  }
+
+  .noppa {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
