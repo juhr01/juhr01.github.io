@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="styling.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Lämpötilamuunnin</title>
+</head>
+
+<body>
+  <section class="container">
+    <a id="takaisin" href="../projektit/projektit.html">&#8592;Takaisin</a>
+    <form id="my-form">
+      <h1>Lämpötilamuunnin</h1>
+      <br>
+      <select id="myList">
+        <option value="cTOf" id="cTOf">Celsius -> Fahrenheit</option>
+        <option value="cTOk" id="cTOk">Celsius -> Kelvin</option>
+        <option value="fTOc" id="fTOc">Fahrenheit -> Celsius</option>
+        <option value="fTOk" id="fTOk">Fahrenheit -> Kelvin</option>
+        <option value="kTOc" id="kTOc">Kelvin -> Celsius</option>
+        <option value="kTOf" id="kTOf">Kelvin -> Fahrenheit</option>
+      </select>
+      <div id="muunnin">
+      <input type="text" id="lampotila" placeholder="Lämpötila">
+      <button" type="button" id="muunto" onclick="muunna()">Muunna</button>
+    </div>
+    <br>
+    <div class="nappi">
+    <label for="1d"><input type="radio" id="1d" name="desimaali" value="1 Desimaali"> 1 Desimaali</label>
+  </div>
+  <div class="nappi">
+    <label for="2d"><input type="radio" id="2d" name="desimaali" value="2 Desimaalia"> 2 Desimaalia</label>
+  </div>
+  <div class="nappi">
+    <label for="3d"><input type="radio" id="3d" name="desimaali" value="3 Desimaalia"> 3 Desimaalia</label>
+  </div>
+  <br>
+  <h2><span id="output"></span></h2>
+    </form>
+
+  </section>
+  <footer>
+    <p class="footertext">© Juho Riipinen TiVi21A</p>
+  </footer>
+  <script src="script.js"></script>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

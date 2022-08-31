@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-image: url('tausta.jpg');
+    overflow-x: hidden;
+    overflow-y:auto;
+  }
+
+  
+  header {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .container {
+    margin: auto;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 3rem;
+    margin-top:5em;
+    background-color: white;
+  }
+  
+  #my-form {
+    display: inline-block;
+    padding: 2rem;
+    background: white;
+  }
+  
+  #my-form label {
+    display: inline-block;
+  }
+  
+  #my-form input[type='text'] {
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #muunto {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #muunto:hover {
+    background: #444;
+    color:black;
+  }
+  
+
+  #muunnin {
+    display:flex;
+    flex-direction: row;
+    width: 800%;
+    margin-top: 10px;;
+  }
+
+  .nappi {
+    display:flex;
+    flex-direction: row;
+  
+  }
+
+  label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  #takaisin {
+    display: block;
+    width: 100px;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 2rem;
+    text-decoration: none;
+  }
+
+  #takaisin:hover {
+    background: #444;
+    color:black;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  footer {
+    position:fixed;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+    margin-top:20px;
+    background-color: #1a1a1a;
+  
+  }
+
+  .footertext {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media screen and (max-width :470px) {
+    #muunnin {
+      flex-direction: column;
+    }
+
+    #lampotila {
+      max-width: 200px;
+    }
+
+    #muunto {
+      max-width: 200px;
+    }
+  }
+
+  @media screen and (max-width :270px) {
+    #muunnin {
+      flex-direction: column;
+    }
+
+    #lampotila {
+      max-width: 150px;
+    }
+
+    #muunto {
+      max-width: 150px;
+    }
+  }
