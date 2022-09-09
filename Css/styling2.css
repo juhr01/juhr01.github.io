@@ -338,13 +338,31 @@ hr {
 }
 
 #hirsipuu {
-	margin: 15px;
+	margin: 10px;
 	max-width: 100%;
   	height: auto;
 }
 
 #hedelmapeli {
-	margin: 15px;
+	margin: 10px;
+	max-width: 100%;
+  	height: auto;
+}
+
+#matopeli {
+	margin: 10px;
+	max-width: 100%;
+  	height: auto;
+}
+
+#noppapeli {
+	margin: 10px;
+	max-width: 100%;
+  	height: auto;
+}
+
+#clicker {
+	margin: 10px;
 	max-width: 100%;
   	height: auto;
 }

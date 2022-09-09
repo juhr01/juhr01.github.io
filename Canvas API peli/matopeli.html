@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matopeli🐍</title>
+</head>
+
+<body>
+    
+    <section id="content">
+        <a id="takaisin" href="../projektit/projektit.html">&#8592;Takaisin projekteihin</a>
+        <h1>Matopeli</h1>
+        <canvas id="canvas" width="630" height="510" style="display:none"></canvas>
+        <div id="pisteruutu" style="display:none">Pisteet: <span id="pisteetNyt">0</span></div>
+        <div id="aloitus">
+            <h2>Tervetuloa pelaamaan matopeliä!</h2>
+            <h2>Peli on Canvas API ryhmäprojekti.</h2>
+            <h2>Tekijät: Juho Riipinen ja Laura Gynther</h2>
+        </div>
+        <div id="lopetus" style="display:none">
+            <h2>Peli ohi!</h2>
+            <h2>Keräsit <span id="pisteetLopussa"></span> pistettä.</h2>
+            <button type="button" id="pelaaUudelleen" onclick="location.reload()">Pelaa uudelleen</button>
+        </div>
+        <button id="pelinappi" type="button" onclick="pelaa()" style="display:block">Pelaa</button>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
