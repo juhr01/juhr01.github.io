@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Äänestyssovellus</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body onload="getVotes()">
+        <div id="header">
+            <div id="headline">
+                <h1>Äänestyssovellus</h1>
+            </div>
+            <div class="logging" id="logging">
+                <label for="adminword" id="logginglabel">Kirjautuminen: </label>
+                <input type="password" id="adminword" placeholder="salainen sana">
+                <button id="login" onclick="login()">Kirjaudu</button>
+                <p id="kirjautuneena" style="display:none">Kirjautuneena ylläpitäjänä</p>
+                <button id="logout" onclick="logout()" style="display: none">Kirjaudu ulos</button>
+            </div>
+        </div>
+        <section id="page">
+        <div id="content">
+        
+            <div id="controls">
+                <button class="controlBtn" id="createBtn" onclick="createVote()" style="display:none">Luo uusi</button>
+                <div class="createVote" id="createVote" style="display:none">
+                    <button class="createBtn" id="exitCreate" onclick="exitCreate()">Poistu</button>
+                    <input type="text" id="question" value="Kysymys">
+                    <input class="option" type="text" id="option1" value="Vaihtoehto 1">
+                    <input class="option" type="text" id="option2" value="Vaihtoehto 2">
+                    <button class="createBtn" id="finishCreate" onclick="finishCreate(), getVotes()">Luo äänestys</button>
+                </div>
+            </div>
+
+            <div id="votes">
+              
+            </div>
+        </div>
+    </section>
+        <footer>
+            <p class="footertext">© Juho Riipinen TiVi21A</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
