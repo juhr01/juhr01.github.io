@@ -4,10 +4,13 @@
 let admin = false;
 
 //tarkistetaan, onko jo välimuistissa votes-arrayta
-if (window.localStorage.getItem('votes') == null) {
-    let votes = [];
-    window.localStorage.setItem('votes', JSON.stringify(votes));
+function init() {
+    if (window.localStorage.getItem('LocalVotesList') == null) {
+        let LocalVotesList = [];
+        window.localStorage.setItem('LocalVotesList', JSON.stringify(LocalVotesList));
+    }
 }
+
 
 //sisäänkirjautuminen
 function login() {
@@ -81,11 +84,11 @@ function finishCreate() {
         let option1 = document.querySelector("#option1").value;
         let option2 = document.querySelector("#option2").value;
 
-        let vote = { voteName: question, voteOptions: [{ "optionName": option1, "votes": 0 }, { "optionName": option2, "votes": 0 }] };
+        let vote = { voteName: question, voteOptions: [{ "optionName": option1, "numberOfVotes": 0 }, { "optionName": option2, "numberOfVotes": 0 }] };
 
-        let votes = JSON.parse(window.localStorage.getItem('votes'));
-        votes.push(vote);
-        window.localStorage.setItem('votes', JSON.stringify(votes));
+        let LocalVotesList = JSON.parse(window.localStorage.getItem('LocalVotesList'));
+        LocalVotesList.push(vote);
+        window.localStorage.setItem('LocalVotesList', JSON.stringify(LocalVotesList));
     }
 
 }
@@ -97,10 +100,10 @@ function getVotes() {
     newVoteDiv.innerHTML = "";
     newVoteDiv.className = "votes";
     newVoteDiv.style.display = "block";
-    let votes = JSON.parse(window.localStorage.getItem('votes'));
-    var voteNumber = 0;
+    let LocalVotesList = JSON.parse(window.localStorage.getItem('LocalVotesList'));
+    let voteNumber = 0;
 
-    votes.forEach(vote => {
+    LocalVotesList.forEach(vote => {
         //tehdään jokaiselle äänestykselle oma laatikko foreach() avulla
         let newVoteBox = document.createElement('div');
         newVoteBox.innerHTML = "";
@@ -142,7 +145,7 @@ function getVotes() {
             optionInList.appendChild(h4)
 
             let span = document.createElement('span');
-            span.value = option.votes;
+            span.value = option.numberOfVotes;
             let spanValue = document.createTextNode(span.value);
             span.appendChild(spanValue);
             optionInList.appendChild(span);
@@ -176,17 +179,17 @@ function getVotes() {
 
 //tehdään välimuistissa olevasta votes-arraysta taas käytettävä array-olio, lisätään yksi votes-arvo lisää määriteltyyn arrayn kohtaan, tallennetaan votes taas välimuistiin ja palautetaan arrayn arvot
 function vote(voteId, optionId) {
-    let votes = JSON.parse(window.localStorage.getItem('votes'));
-    votes[voteId].voteOptions[optionId].votes++;
-    window.localStorage.setItem('votes', JSON.stringify(votes));
-    return votes[voteId].voteOptions[optionId].votes;
+    let LocalVotesList = JSON.parse(window.localStorage.getItem('LocalVotesList'));
+    LocalVotesList[voteId].voteOptions[optionId].numberOfVotes++;
+    window.localStorage.setItem('LocalVotesList', JSON.stringify(LocalVotesList));
+    return LocalVotesList[voteId].voteOptions[optionId].numberOfVotes;
 }
 
 //tehdään välimuistissa olevasta votes-arraysta taas käytettävä array-olio, splice() funktion avulla poistetaan määritelty arvo, tallennetaan taas välimuistiin ja suoritetaan getteri uudestaan sovelluksen päivittämiseksi
 function voteRemove(vote) {
-    let votes = JSON.parse(window.localStorage.getItem('votes'));
-    votes.splice(vote, 1);
-    window.localStorage.setItem('votes', JSON.stringify(votes));
+    let LocalVotesList = JSON.parse(window.localStorage.getItem('LocalVotesList'));
+    LocalVotesList.splice(vote, 1);
+    window.localStorage.setItem('LocalVotesList', JSON.stringify(LocalVotesList));
     getVotes();
 }
 
