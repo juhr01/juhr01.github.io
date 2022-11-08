@@ -1,0 +1,54 @@
+[
+    {
+        "TrashItem": "Cigarette butt",
+        "TrashBin": "mixed waste"
+    },
+    {
+        "TrashItem": "Empty bottle of soda",
+        "TrashBin": "bottle deposti"
+    },
+    {
+        "TrashItem": "Cotton swab",
+        "TrashBin": "mixed waste"
+    },
+    {
+        "TrashItem": "Plastic wrap",
+        "TrashBin": "plastic"
+    },
+    {
+        "TrashItem": "Aluminium foil",
+        "TrashBin": "metal"
+    },
+    {
+        "TrashItem": "AAA-battery",
+        "TrashBin": "batteries"
+    },
+    {
+        "TrashItem": "Socks with holes",
+        "TrashBin": "energy waste"
+    },
+    {
+        "TrashItem": "Cardboard box",
+        "TrashBin": "carton/cardboard"
+    },
+    {
+        "TrashItem": "Food leftovers",
+        "TrashBin": "biodegradable waste"
+    },
+    {
+        "TrashItem": "Broken vacuum cleaner",
+        "TrashBin": "electronics"
+    },
+    {
+        "TrashItem": "Paint",
+        "TrashBin": "dangerous waste"
+    },
+    {
+        "TrashItem": "Newspaper",
+        "TrashBin": "paper"
+    },
+    {
+        "TrashItem": "Jar",
+        "TrashBin": "glass"
+    }
+]

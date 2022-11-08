@@ -1,0 +1,54 @@
+[
+    {
+        "TrashItem": "Tupakantumppi",
+        "TrashBin": "sekajäte"
+    },
+    {
+        "TrashItem": "Limsapullo",
+        "TrashBin": "pullonpalautus"
+    },
+    {
+        "TrashItem": "Pumpulipuikko",
+        "TrashBin": "sekäjate"
+    },
+    {
+        "TrashItem": "Tuorekelmu",
+        "TrashBin": "muovinkeräys"
+    },
+    {
+        "TrashItem": "Alumiinifolio",
+        "TrashBin": "metallinkeräys"
+    },
+    {
+        "TrashItem": "AAA-paristo",
+        "TrashBin": "paristonkeräys"
+    },
+    {
+        "TrashItem": "Reikäiset sukat",
+        "TrashBin": "energiajäte"
+    },
+    {
+        "TrashItem": "Pahvilaatikko",
+        "TrashBin": "keräyskartonki"
+    },
+    {
+        "TrashItem": "Ruoantähteet",
+        "TrashBin": "biojäte"
+    },
+    {
+        "TrashItem": "Rikkinäinen imuri",
+        "TrashBin": "SER"
+    },
+    {
+        "TrashItem": "Maali",
+        "TrashBin": "vaarallinen jäte"
+    },
+    {
+        "TrashItem": "Sanomalehti",
+        "TrashBin": "paperinkeräys"
+    },
+    {
+        "TrashItem": "Hillopurkki",
+        "TrashBin": "lasinkeräys"
+    }
+]

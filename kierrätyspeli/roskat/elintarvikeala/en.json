@@ -1,0 +1,42 @@
+[
+    {
+        "TrashItem": "Unusable pot",
+        "TrashBin": "metal"
+    },
+    {
+        "TrashItem": "Detergents",
+        "TrashBin": "dangerous waste"
+    },
+    {
+        "TrashItem": "Cardboard box",
+        "TrashBin": "carton/cardboard"
+    },
+    {
+        "TrashItem": "Unnecessary food recipe",
+        "TrashBin": "paper"
+    },
+    {
+        "TrashItem": "Soap",
+        "TrashBin": "mixed waste"
+    },
+    {
+        "TrashItem": "Sausage package",
+        "TrashBin": "plastic"
+    },
+    {
+        "TrashItem": "Jar",
+        "TrashBin": "glass"
+    },
+    {
+        "TrashItem": "Dirty paper towels",
+        "TrashBin": "energy waste"
+    },
+    {
+        "TrashItem": "Food leftovers",
+        "TrashBin": "biodegradable waste"
+    },
+    {
+        "TrashItem": "Broken electric mixer",
+        "TrashBin": "electronics"
+    }
+]

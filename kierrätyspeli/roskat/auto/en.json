@@ -1,0 +1,54 @@
+[
+    {
+        "TrashItem": "Waste oil",
+        "TrashBin": "dangerous waste"
+    },
+    {
+        "TrashItem": "Old battery",
+        "TrashBin": "dangerous waste"
+    },
+    {
+        "TrashItem": "Empty spray can",
+        "TrashBin": "metal"
+    },
+    {
+        "TrashItem": "Old tire",
+        "TrashBin": "dangerous waste"
+    },
+    {
+        "TrashItem": "Cardboad box",
+        "TrashBin": "carton/cardboard"
+    },
+    {
+        "TrashItem": "Burnt out halogen lamp",
+        "TrashBin": "mixed waste"
+    },
+    {
+        "TrashItem": "Broken headlight",
+        "TrashBin": "mixed waste"
+    },
+    {
+        "TrashItem": "Empty cleaner bottle",
+        "TrashBin": "plastic"
+    },
+    {
+        "TrashItem": "Broken cordless drill",
+        "TrashBin": "electronics"
+    },
+    {
+        "TrashItem": "Dirty paper towels",
+        "TrashBin": "energy waste"
+    },
+    {
+        "TrashItem": "Car magazine",
+        "TrashBin": "paper"
+    },
+    {
+        "TrashItem": "Banana peel",
+        "TrashBin": "biodegradable waste"
+    },
+    {
+        "TrashItem": "Undepositable glass bottle",
+        "TrashBin": "glass"
+    }
+]

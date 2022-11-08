@@ -1,0 +1,42 @@
+[
+    {
+        "TrashItem": "Käyttökelvoton kattila",
+        "TrashBin": "metallinkeräys"
+    },
+    {
+        "TrashItem": "Pesuaineet",
+        "TrashBin": "vaarallinen jäte"
+    },
+    {
+        "TrashItem": "Pahvilaatikko",
+        "TrashBin": "keräyskartonki"
+    },
+    {
+        "TrashItem": "Turha ruokaresepti",
+        "TrashBin": "paperinkeräys"
+    },
+    {
+        "TrashItem": "Saippua",
+        "TrashBin": "sekajäte"
+    },
+    {
+        "TrashItem": "Nakkipaketti",
+        "TrashBin": "muovinkeräys"
+    },
+    {
+        "TrashItem": "Hillopurkki",
+        "TrashBin": "lasinkeräys"
+    },
+    {
+        "TrashItem": "Likaiset paperipyyhkeet",
+        "TrashBin": "energiajäte"
+    },
+    {
+        "TrashItem": "Ruoantähteet",
+        "TrashBin": "biojäte"
+    },
+    {
+        "TrashItem": "Rikkinäinen sähkövatkain",
+        "TrashBin": "SER"
+    }
+]

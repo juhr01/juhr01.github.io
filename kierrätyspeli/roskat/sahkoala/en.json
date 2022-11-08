@@ -1,0 +1,46 @@
+[
+    {
+        "TrashItem": "Old electrical cables",
+        "TrashBin": "metal"
+    },
+    {
+        "TrashItem": "Cardboard box",
+        "TrashBin": "carton/cardboard"
+    },
+    {
+        "TrashItem": "LED lamp",
+        "TrashBin": "electronics"
+    },
+    {
+        "TrashItem": "Energy saving lamp",
+        "TrashBin": "electronics"
+    },
+    {
+        "TrashItem": "Solder paste",
+        "TrashBin": "dangerous waste"
+    },
+    {
+        "TrashItem": "Paper towels",
+        "TrashBin": "energy waste"
+    },
+    {
+        "TrashItem": "Magazine",
+        "TrashBin": "paper"
+    },
+    {
+        "TrashItem": "Burnt halogen bulb",
+        "TrashBin": "mixed waste"
+    },
+    {
+        "TrashItem": "Styrox plate",
+        "TrashBin": "plastic"
+    },
+    {
+        "TrashItem": "Banana peel",
+        "TrashBin": "biodegradable waste"
+    },
+    {
+        "TrashItem": "Undepositable glass bottle",
+        "TrashBin": "glass"
+    }
+]
